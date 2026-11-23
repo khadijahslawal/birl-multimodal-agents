@@ -74,15 +74,14 @@ We plan to use a subset of **ScienceQA**, emphasizing image-dependent multiple-c
 
 Implementation will use Python, PyTorch, Hugging Face Transformers, NumPy, and SciPy, with Pyro considered for Bayesian posterior inference. GPU resources will be used for VLM inference, while the small-state IRL experiments can be run with comparatively modest computational requirements.
 
-### 7. Anticipated Timeline
+### 7. Project Plan
 
-| Week | Planned Work |
-|---|---|
-| **1** | Define the controlled reasoning environment, implement action/state representations, and collect pilot VLM trajectories. |
-| **2** | Implement Maximum-Entropy IRL and validate reward recovery on synthetic demonstrations. |
-| **3** | Infer reward preferences from VLM trajectories and implement Bayesian posterior estimation. |
-| **4** | Evaluate behavioral differences, posterior uncertainty, and associations with reasoning failures. |
-| **5 (if available)** | Conduct targeted ablations, consolidate results, and prepare the final report and presentation. |
+1. Define the controlled reasoning environment, implement action/state representations and collect pilot VLM trajectories.
+2. Implement Maximum-Entropy IRL and validate reward recovery on synthetic demonstrations.
+3. Infer reward preferences from VLM trajectories and implement Bayesian posterior estimation.
+4. Evaluate behavioral differences, posterior uncertainty and associations with reasoning failures.
+5. Conduct targeted ablations, consolidate results and prepare the final report and presentation.
+
 
 If Bayesian inference or the full reasoning environment proves computationally demanding, we will reduce the state space and prioritize validated Maximum-Entropy IRL with a focused behavioral analysis. This will preserve the project's central investigation of information-gathering preferences under uncertainty.
 
