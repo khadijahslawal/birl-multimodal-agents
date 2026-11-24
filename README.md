@@ -6,7 +6,7 @@
 
 ## 1. Problem Statement and Motivation
 
-Agents operating under uncertain observations must decide whether to act using their current evidence or pay a cost to gather more information. This tradeoff is fundamental to robotics: a system may need to choose between acting from an uncertain state estimate and collecting another sensor measurement. The same structure appears in high-resolution visual question answering, where a model can answer from a coarse view or inspect a more informative region before committing.
+Agents operating under uncertain observations must decide whether to act using their current evidence or pay a cost to gather more information. This tradeoff is fundamental to robotics, where a system must often choose between acting on an uncertain state estimate and collecting another sensor measurement. Similar decisions arise in scientific image analysis, medical decision support, and active perception for autonomous navigation. Although an agent's final decision can be evaluated for correctness, its underlying preferences for information gathering, efficiency, and task completion are far harder to characterize. The same structure appears in high-resolution visual question answering, where a model can answer immediately from a coarse view or inspect a more informative region before committing
 
 This project investigates whether **Bayesian Inverse Reinforcement Learning (BIRL)** can recover interpretable preferences from a vision-language model's sequential information-gathering behavior. The primary question is:
 
