@@ -1,2 +1,8 @@
 readings/
 .DS_Store
+.env
+.python-version
+uv.lock
+data/raw/
+data/processed/
+outputs/

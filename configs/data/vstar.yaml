@@ -1,0 +1,19 @@
+# Subject to change
+
+version: vstar-evidence-v1
+
+level0:
+  crop: full
+  max_side: 448
+
+level1: 
+  crop: target_union
+  context_scale: 3.0
+  max_side: 896 
+  
+level2:
+  crop: target_union
+  context_scale: 1.5
+  max_side: null
+
+interpolation: bicubic
